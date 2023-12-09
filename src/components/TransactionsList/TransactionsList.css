@@ -1,0 +1,16 @@
+.c-TransactionsList-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.c-TransactionsList-table th, .c-TransactionsList-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.c-TransactionsList-monthly-total {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}

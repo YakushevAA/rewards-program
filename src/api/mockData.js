@@ -1,0 +1,20 @@
+export const mockTransactions = [
+  { customerId: 1, date: '2023-01-05', amount: 120 },
+  { customerId: 1, date: '2023-01-20', amount: 80 },
+  { customerId: 2, date: '2023-01-11', amount: 190 },
+  { customerId: 3, date: '2023-01-08', amount: 140 },
+  { customerId: 2, date: '2023-01-25', amount: 50 },
+  { customerId: 3, date: '2023-01-22', amount: 110 },
+  { customerId: 1, date: '2023-02-15', amount: 200 },
+  { customerId: 1, date: '2023-02-28', amount: 40 },
+  { customerId: 2, date: '2023-02-05', amount: 120 },
+  { customerId: 2, date: '2023-02-20', amount: 90 },
+  { customerId: 3, date: '2023-02-12', amount: 60 },
+  { customerId: 3, date: '2023-02-27', amount: 180 },
+  { customerId: 1, date: '2023-03-10', amount: 150 },
+  { customerId: 1, date: '2023-03-23', amount: 60 },
+  { customerId: 2, date: '2023-03-15', amount: 60 },
+  { customerId: 2, date: '2023-03-30', amount: 110 },
+  { customerId: 3, date: '2023-03-05', amount: 50 },
+  { customerId: 3, date: '2023-03-21', amount: 70 }
+];
