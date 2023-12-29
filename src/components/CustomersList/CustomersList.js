@@ -1,9 +1,22 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { CustomerTransactions } from '../CustomerTransactions';
-import { groupTransactionsByCustomerAndMonth} from '../../utils/calculateRewards';
+import { useGetTransactionsQuery } from '../../features/rewards/rewardsApi';
+import { Loader } from '../common/Loader';
 
-export const CustomersList = ({ transactions }) => {
-  const customers = useMemo(() => groupTransactionsByCustomerAndMonth(transactions), [transactions]);
+export const CustomersList = () => {
+  const { data: customers, isLoading, isError, error } = useGetTransactionsQuery();
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  if (isError) {
+    return <div className="error">Error: {error.toString()}</div>;
+  }
+
+  if (!customers) {
+    return <div>No transactions available.</div>;
+  }
 
   return (
     <>
